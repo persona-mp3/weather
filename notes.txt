@@ -1,0 +1,28 @@
+main --> {
+    temperature,
+    feels like,
+    humidity
+}
+
+
+weather(array) --> {
+    maain,
+    desccription,
+    icon??
+}
+
+
+wind ---> {
+    speed: 5.66
+}
+y
+visibilit
+
+if temperature is between 12 - 20°C >> kinda chilly outside  
+if temperature is between 21 - 25°C >> pleasantly warm  
+if temperature is between 26 - 30°C >> warm, might get sweaty  
+if temperature is above 30°C >> hot, stay hydrated!  
+if temperature is less than 10°C >> very cold outside  
+if temperature is less than 5°C >> it's icy, be careful  
+
+
