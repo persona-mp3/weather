@@ -2,7 +2,6 @@
 import {adviceHandler} from './advice.js'
 import { credentials } from '../../config.js' 
 
-console.log(credentials)
 // DOM Importi
 const currentLocation = document.querySelector('.location')
 const region = document.querySelector('.region');
@@ -66,6 +65,7 @@ function getUserCoordinates() {
         feelsLike.innerText = getWeather[2]
         humidity.innerText = getWeather[3]
         currentWeather.innerText = getWeather[4]
+        console.log('rr',getWeather[4])
         fDegrees.innerText = `${farenheitTemperature}˚F`
 
         userAdvice.innerText = `${currentAdvice}`
@@ -187,3 +187,18 @@ const getWeatherData = async function(latitude, longitude) {
 }
 
 getUserCoordinates()
+
+
+
+//allow users to search for info
+
+
+
+// get user value
+const userSearch = document.querySelector('search-location');
+const searchBtn = document.querySelector('search-btn');
+
+
+
+
+

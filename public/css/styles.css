@@ -20,6 +20,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: black;
+    color: white
+}
+
 .flex__row {
     display: flex;
     flex-direction: row;
@@ -34,13 +39,15 @@ button, li, a {
     color: black;
     text-align: none;
     list-style-type: none;
+    border: 1px solid grey;
 }
 
 button {
     text-align: center;
     padding: var(--body-padding);
-    border: inherit;
+    border: 1px soli grey;
     border-radius: .8rem;
+    /* background-color: rgb(85, 135, 85); */
 }
 
 a {
@@ -117,3 +124,158 @@ main {
     height: auto;
     max-width: 100%;
 }
+
+
+
+
+main {
+    margin: o auto;
+    border: var(--border);
+    padding: 1rem;
+}
+
+.search {
+    margin: 0 auto;
+    
+}
+
+input {
+    all: unset;
+    padding: var(--body-padding);
+    border: 1px solid grey;
+    border-radius: var(--border-radius)
+}
+
+
+section input {
+    width: 50%;
+    padding: 2rem;
+}
+
+
+
+section .search-btn {
+    color: white;
+    font-size: 1.28rem;
+    border: 1px solid white;
+    padding: 1.6rem;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+
+
+}
+
+.status-section {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    grid-template-rows: repeat(3, fit-content(100%));
+    gap: 2rem;
+    justify-items: center;
+    width: fit-content;
+    /* margin-right: 0 auto; */
+}
+
+.temp {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+
+
+.status {
+    font-size: 1.89rem;
+    font-weight: 600;
+}
+
+.location, .state {
+    font-size: 2.28rem;
+    font-weight: 200;
+}
+
+
+.location-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.temp {
+    font-size: 28rem;
+    font-weight: 200;
+    position: relative;
+    width: fit-content; 
+    transition: font-size ease 0.5s;
+    color: rgb(28, 153, 211);
+
+}
+
+.temp::after {
+    content: 'ºC';
+    font-size: 5rem !important;
+    top: 0%;
+    position: absolute;
+    /* transition: all ease 0.5s */
+
+}
+
+.weather {
+    font-size: 2rem;
+    font-weight: 300;
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    transition: all ease 0.5s
+}
+
+.wind {
+    font-size: 1.88rem;
+    color: white;
+    width: fit-content;
+    transition: all ease 0.5s
+
+}
+
+
+.smoothAnim {
+    transition: 0.8s
+}
+
+.weather {
+    grid-column-start: 2;
+    grid-row-start: 3
+}
+.wind {
+    grid-column-start: 2;
+    grid-row-start: 2
+}
+
+
+
+
+.location-container {
+    display: flex;
+    flex-direction: column ;
+    /* border: 1px solid rebeccapurple; */
+    justify-content: center;
+    gap: .8rem;
+    align-items: flex-start;
+}
+
+
+.location,.state {
+    font-weight: bold;
+    text-transform: uppercase;
+    color:rgb(255, 255, 255);
+
+}
+
+
+.report {
+    font-size: 1.88rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.animated-text {
+    transition: opacity 0.3s ease-in-out;
+  }

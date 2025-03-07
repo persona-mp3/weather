@@ -1,10 +1,12 @@
-export function adviceHandler(temp) {
-    if (isNaN(temp)) {
+export function adviceHandler(param) {
+    if (isNaN(param)) {
         return
     } 
 
+    let temp = Math.round(param)
 
-    if (temp >= 12 && temp <= 20) {
+
+    if (temp >= 10 && temp <= 20) {
         // console.log('Kinda chilly outside')
         return 'Kinda Chilly outside'
     }

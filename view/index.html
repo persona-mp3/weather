@@ -5,32 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health advice</title>
     <link rel="stylesheet" href="../public/css/styles.css">
-    <script defer type="module" src="../public/js/index.js"></script>
+    <!-- <script defer  src="../public/js/index.js"></script> -->
+    <script defer type="module"  src="../public/js/client.js"></script>
 </head>
 <body>
 
 
-    <p>Location:---o <span class="location">Loading</span></p> 
+    <main>
+        <section class="search">
+            <input type="text" name="location-search" class="location-search"
+            placeholder="London"
+            >
+            <button class="search-btn" type="button">Search </button>
+        </section>
 
-    <span>State: ---o<span class="region">Loading</span></span>
 
-    <p>In celcius, its ---o <span class="celcius">Loading</span></p>
+        <section class="status-section">
+            
+            <div class="location-container">
+                <p class="location"></p>
+                <span class="state"></span>
 
-    <h3>Farenheit: <span class="f-degrees"></span></h3>
+                <p class='report'> <span class="weather"></span></p>
+                <p class="wind"></p>
     
-    <p>Visibility: <span class="visibility">Loading</span></p>
-    <p class="windspeed"></p>
+            </div>
 
-    <p> Hmm...but it kinda feels like  -----o<span class="feels-like">Loading</span> o------today</p>
-
-    <p >Humidity ---o <span class="humidity">Loading</span></p>
-
-    <p>Current Weather -----o <span class="current-weather">Loading</span></p>
+            <p class="temp">0</p>
+        </section>
+    </main>
 
 
-
-
-   <p class="advice">advice: </p> 
 
 </body>
 </html>
